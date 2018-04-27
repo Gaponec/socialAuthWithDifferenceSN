@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container unauthenticated">
+    <p>
+        <a href="/login/google">Login with google</a>
+    </p>
+    <p>
+        <a href="/login/github">Login with github</a>
+    </p>
+</div>
+
+<div class="container authenticated">
+    Well come <span id="user"></span>
+    <div >
+        <button onclick="logout()" class="btn btn-primary">Logout</button>
+    </div>
+</div>
+
+</body>
+</html>

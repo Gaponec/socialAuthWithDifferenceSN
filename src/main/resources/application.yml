@@ -1,0 +1,27 @@
+google:
+  client:
+    clientId: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    clientSecret: xxxxxxxxxxxxxxxxxxxx
+    accessTokenUri: https://accounts.google.com/o/oauth2/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+    scope: profile email
+  resource:
+    userInfoUri: https://www.googleapis.com/userinfo/v2/me
+    preferTokenInfo: false
+github:
+  client:
+    clientId: xxxxxxxxxxxxxxxx
+    clientSecret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.github.com/user
+    preferTokenInfo: false
+server:
+  port: 8080
